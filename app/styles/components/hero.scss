@@ -1,0 +1,35 @@
+.hero {
+  background: url('../images/background.jpg') no-repeat center center;
+  background-size: cover;
+  height: 94vh;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    margin: 0 0 1rem 0;
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: lowercase;
+    color: $c-primary;
+  }
+
+  &__options-btn {
+    margin: 0 0.5rem;
+    padding: 1rem 1.5rem;
+    background: $c-primary;
+    color: $c-white;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+    box-shadow: $box-shadow;
+  }
+}
