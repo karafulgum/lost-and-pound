@@ -1,8 +1,10 @@
 $c-primary: #C65454;
 $c-white: #fff;
+$c-background: #fafafa;
 $box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
 
 @import 'reset';
 @import 'layout';
 @import 'components/nav';
 @import 'components/hero';
+@import 'components/login';
