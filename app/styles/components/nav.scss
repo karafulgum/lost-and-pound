@@ -1,6 +1,12 @@
 .nav {
-  padding: 0.5rem 0;
   background: $c-primary;
+
+  &__logo {
+    margin: 0.2rem 0;
+    color: $c-white;
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+  }
 
   &__container {
     display: flex;
@@ -21,4 +27,8 @@
   .nav {
     padding: 0.5rem 1rem;
   }
+}
+
+.fa-paw {
+  margin-right: 0.5rem;
 }
