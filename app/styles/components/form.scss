@@ -1,0 +1,63 @@
+.form {
+  margin-top: 4rem;
+  height: 30rem;
+  background: $c-white;
+  position: relative;
+
+  &__group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__title {
+    margin: 0.5rem 0;
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    text-transform: lowercase;
+  }
+
+  &__label {
+    margin-bottom: 0.2rem;
+    color: $c-form;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+
+    &:last-of-type {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__input {
+    width: 40%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid $c-form;
+    outline: 0;
+
+    &:focus {
+      border-bottom: 1px solid $c-primary;
+    }
+  }
+
+  &__button {
+    margin-top: 2rem;
+    padding: 0.3rem 0;
+    width: 40%;
+    background: $c-primary;
+    border: 0;
+    border-radius: 0.4rem;
+    color: $c-white;
+    font-family: 'Raleway', serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}

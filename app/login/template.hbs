@@ -1,9 +1,14 @@
-{{#simple-form class="form" as |formValues|}}
-  <div class="form__content">
-    <div class="form__group">
-      <p class="form__title">Welcome Back</p>
-      <label class="form__label" for="email">Email</label>
-      {{input class="form__input" type="text" id="email" required=true}}
+<div class="container">
+  <form class="form">
+    <div class="form__content">
+      <div class="form__group">
+        <p class="form__title">Welcome Back</p>
+        <label class="form__label" for="email">Email</label>
+        <input class="form__input" type="text" id="email" required=true>
+        <label class="form__label" for="password">Password</label>
+        <input class="form__input" type="password" id="password" required=true>
+        <button class="form__button">Sign In</button>
+      </div>
     </div>
-  </div>
-{{/simple-form}}
+  </form>
+</div>
