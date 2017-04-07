@@ -1,26 +1,32 @@
 .form {
   margin-top: 4rem;
-  height: 30rem;
   background: $c-white;
-  position: relative;
 
-  &__group {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__login {
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
 
   &__title {
     margin: 0.5rem 0;
     font-family: 'Sacramento', cursive;
     font-size: 3rem;
+    text-align: center;
     text-transform: lowercase;
+
+    &--light {
+      color: $c-white;
+    }
   }
 
   &__label {
@@ -35,7 +41,7 @@
   }
 
   &__input {
-    width: 40%;
+    width: 70%;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -50,14 +56,43 @@
   &__button {
     margin-top: 2rem;
     padding: 0.3rem 0;
-    width: 40%;
+    width: 70%;
     background: $c-primary;
     border: 0;
-    border-radius: 0.4rem;
+    border-radius: 0.8rem;
     color: $c-white;
     font-family: 'Raleway', serif;
     text-transform: uppercase;
     font-size: 1rem;
     cursor: pointer;
+  }
+
+  &__register {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/login.jpg') center;
+    background-size: cover;
+    height: 30rem;
+  }
+
+  &__text {
+    color: $c-white;
+    text-align: center;
+  }
+
+  &__btn {
+    margin-top: 3rem;
+    padding: 0.25rem 0;
+    background: transparent;
+    border: 1px solid $c-white;
+    border-radius: 0.8rem;
+    color: $c-white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 30%;
   }
 }
